@@ -34,8 +34,9 @@ func Clone(url string, path string, options *CloneOptions) (*Repository, error) 
 
 	// finish populating clone options here so we can defer CString free
 	if len(options.RemoteName) != 0 {
-		copts.remote_name = C.CString(options.RemoteName)
-		defer C.free(unsafe.Pointer(copts.remote_name))
+		
+		// copts.remote_name = C.CString(options.RemoteName)
+		// defer C.free(unsafe.Pointer(copts.remote_name))
 	}
 
 	if len(options.CheckoutBranch) != 0 {
@@ -67,9 +68,9 @@ func populateCloneOptions(ptr *C.git_clone_options, opts *CloneOptions) {
 	} else {
 		ptr.bare = 0
 	}
-	if opts.IgnoreCertErrors {
-		ptr.ignore_cert_errors = 1
-	} else {
-		ptr.ignore_cert_errors = 0
-	}
+	// if opts.IgnoreCertErrors {
+	// 	ptr.ignore_cert_errors = 1
+	// } else {
+	// 	ptr.ignore_cert_errors = 0
+	// }
 }
