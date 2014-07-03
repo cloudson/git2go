@@ -29,7 +29,7 @@ import "C"
 import (
 	"runtime"
 	"unsafe"
-	"github.com/libgit2/git2go"
+	"github.com/cloudson/git2go"
 )
 
 func MakeGitError(err C.int) error {

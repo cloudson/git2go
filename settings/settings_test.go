@@ -3,7 +3,7 @@ package settings
 import (
 	"testing"
 	"runtime"
-	"github.com/libgit2/git2go"
+	"github.com/cloudson/git2go"
 )
 
 type pathPair struct {
