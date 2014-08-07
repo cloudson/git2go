@@ -2,7 +2,7 @@
 
 set -ex
 
-git clone --depth 1 --single-branch git://github.com/libgit2/libgit2 libgit2
+git clone --depth 1 --single-branch git://github.com/cloudson/libgit2 libgit2
 
 cd libgit2
 cmake -DTHREADSAFE=ON \
