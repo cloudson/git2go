@@ -1,1 +1,3 @@
-module github.com/libgit2/git2go
+module github.com/cloudson/git2go
+
+go 1.12
