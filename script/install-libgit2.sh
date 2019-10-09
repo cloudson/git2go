@@ -2,9 +2,10 @@
 
 set -ex
 
-git clone --depth 1 --single-branch git://github.com/cloudson/libgit2 libgit2 
+git clone  git://github.com/libgit2/libgit2 libgit2 
 
 cd libgit2
+git checkout v0.27.0
 # Those files are temporary, should not be in git. To minimize 
 # impact, we'll delete them now
 rm -rf CMakeCache.txt CMakeFiles 
