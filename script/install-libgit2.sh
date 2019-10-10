@@ -5,7 +5,7 @@ set -ex
 git clone  git://github.com/libgit2/libgit2 libgit2 
 
 cd libgit2
-git checkout v0.27.0
+git checkout v0.25.0
 # Those files are temporary, should not be in git. To minimize 
 # impact, we'll delete them now
 rm -rf CMakeCache.txt CMakeFiles 
